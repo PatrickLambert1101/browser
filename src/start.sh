@@ -34,3 +34,5 @@ if [[ ! -z $SHOW_CURSOR ]] && [[ "$SHOW_CURSOR" -eq "1" ]]
 fi
 
 su -c "export DISPLAY=:0 && startx /usr/src/app/startx.sh $CURSOR" - chromium
+sleep 6
+curl --data "url=https://balena-poc.herokuapp.com/" http://localhost:5011/url

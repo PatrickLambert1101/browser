@@ -43,3 +43,6 @@ export VERSION=`chromium --version`
 xset s off -dpms
 
 node /usr/src/app/server.js
+
+sleep 4 
+curl --data "url=https://balena-poc.herokuapp.com/" http://localhost:5011/url
